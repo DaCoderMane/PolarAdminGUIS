@@ -35,6 +35,7 @@ local Tabs = {
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
     BloxFruits = Window:AddTab({ Title = "BloxFruits", Icon = "" }),
+    Dahood = Window:AddTab({ Title = "DaHood", Icon = "" }),
     Info = Window:AddTab({ Title = "Info", Icon = "info" })
 }
 
@@ -294,6 +295,58 @@ local WinterHub = Tabs.BloxFruits:AddButton({
             Fluent:Notify({
             Title = "Polar Admin",
             Content = "Executed Winter Hub.",
+            Duration = 8
+        })
+        end
+    })
+
+local Dimagx = Tabs.Dahood:AddButton({
+        Title = "Dimagx",
+        Description = "Executes Dimagx",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
+            Fluent:Notify({
+            Title = "Polar Admin",
+            Content = "Executed Dimagx.",
+            Duration = 8
+        })
+        end
+    })
+
+local CapsLock = Tabs.Dahood:AddButton({
+        Title = "CapsLock",
+        Description = "Executes CapsLock",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/whoiscapslock/capslock/main/main", true))()
+            Fluent:Notify({
+            Title = "Polar Admin",
+            Content = "Executed CapsLock.",
+            Duration = 8
+        })
+        end
+    })
+
+local Polakya = Tabs.Dahood:AddButton({
+        Title = "Polakya",
+        Description = "Executes Polakya",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pixelheadx/Polakya/main/Bestscript.md"))()
+            Fluent:Notify({
+            Title = "Polar Admin",
+            Content = "Executed Polakya.",
+            Duration = 8
+        })
+        end
+    })
+    
+local CapsLockCamlock = Tabs.Dahood:AddButton({
+        Title = "CapsLock Camlock",
+        Description = "Executes CapsLock Camlock",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/DaCoderMane/MyRobloxScripts/main/dahoodaimlock.lua"))()
+            Fluent:Notify({
+            Title = "Polar Admin",
+            Content = "Executed CapsLock Camlock.",
             Duration = 8
         })
         end
